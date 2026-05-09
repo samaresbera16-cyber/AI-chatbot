@@ -1,0 +1,234 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Samares AI</title>
+
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap"
+        rel="stylesheet">
+</head>
+
+<body>
+
+    <!-- NAVBAR -->
+    <nav>
+
+        <div class="logo">Samares AI</div>
+
+        <ul>
+            <li><a href="#">Home</a></li>
+            <li><a href="#">About</a></li>
+            <li><a href="#">Skills</a></li>
+            <li><a href="#">Projects</a></li>
+            <li><a href="#">Contact</a></li>
+        </ul>
+
+        <button class="hire-btn">Hire Me</button>
+
+    </nav>
+
+
+    <!-- MAIN CONTAINER -->
+    <div class="container">
+
+
+        <!-- LEFT SIDE -->
+        <div class="main-content">
+
+            <div class="tag">
+                👋 Hello, I'm
+            </div>
+
+            <h1>Samares Bera</h1>
+
+            <h2>Python Developer & AI Enthusiast</h2>
+
+            <p>
+                I build intelligent web applications and AI-powered
+                projects using Python, Flask, HTML, CSS and JavaScript.
+            </p>
+
+
+            <!-- BUTTONS -->
+            <div class="buttons">
+
+                <button class="primary-btn">
+                    View Projects
+                </button>
+
+                <button class="secondary-btn">
+                    Download CV
+                </button>
+
+            </div>
+
+
+
+            <!-- STATS -->
+            <div class="stats">
+
+                <div class="card">
+                    <h3>5+</h3>
+                    <p>Projects Completed</p>
+                </div>
+
+                <div class="card">
+                    <h3>2+</h3>
+                    <p>Years Learning</p>
+                </div>
+
+                <div class="card">
+                    <h3>10+</h3>
+                    <p>Technologies Used</p>
+                </div>
+
+            </div>
+
+
+
+            <!-- SKILLS -->
+            <div class="skills">
+
+    <div>
+     <a href="https://github.com/samaresbera16-cyber/python"
+   class="skill-link">
+
+    <div class="skill-box">
+
+        <img src="{{ url_for('static', filename='python.jpg') }}">
+
+        <p>Python</p>
+
+    </div>
+
+    </a>
+    </div>
+
+    <div>
+     <a href="https://github.com/samaresbera16-cyber/Java.j"
+       class="skill-link">
+
+       <div class="skill-box">
+
+            <img src="{{ url_for('static', filename='java.png') }}">
+
+            <p>Java</p>
+
+        </div>
+
+    </a>
+    </div>
+
+    <div class="skill-box">
+        <img src="{{ url_for('static', filename='C.png') }}">
+        <p>C</p>
+    </div>
+
+    <div class="skill-box">
+        <img src="{{ url_for('static', filename='c++.png') }}">
+        <p>C++</p>
+    </div>
+
+    <div class="skill-box">
+        <img src="{{ url_for('static', filename='html.png') }}">
+        <p>HTML</p>
+    </div>
+
+    <div class="skill-box">
+        <img src="{{ url_for('static', filename='css.webp') }}">
+        <p>CSS</p>
+    </div>
+
+    <div class="skill-box">
+        <img src="{{ url_for('static', filename='js.jpeg') }}">
+        <p>JavaScript</p>
+    </div>
+
+</div>
+
+
+
+            <!-- PROJECTS -->
+            <div class="projects-section">
+
+                <h2>Featured Projects</h2>
+
+                <div class="project-container">
+
+                    <div class="project-card">
+                        <h3>AI Chatbot</h3>
+                        <p>Built using Python, Flask and NLP.</p>
+                    </div>
+
+                    <div class="project-card">
+                        <h3>Student Portal</h3>
+                        <p>Web-based student management system.</p>
+                    </div>
+
+                    <div class="project-card">
+                        <h3>Data Visualizer</h3>
+                        <p>Beautiful charts and analytics dashboard.</p>
+                    </div>
+
+                </div>
+
+            </div>
+
+        </div>
+
+
+<!-- FLOATING CHAT BUTTON -->
+<div class="chat-toggle" onclick="toggleChat()">
+    💬
+</div>
+
+
+<!-- CHATBOT -->
+<div class="chatbot-section" id="chatbot">
+
+    <!-- CHAT HEADER -->
+    <div class="chat-header">
+        <h2>Samares</h2>
+        <span>Online</span>
+    </div>
+
+
+    <!-- CHAT BODY -->
+    <div class="chat-body" id="chatBody">
+
+        <div class="bot-msg">
+            Hello 👋 <br>
+            How can I help you today?
+        </div>
+
+    </div>
+
+
+    <!-- CHAT FOOTER -->
+    <div class="chat-footer">
+
+        <input type="text"
+            id="userInput"
+            placeholder="Type your message...">
+
+        <button onclick="sendMessage()">➤</button>
+
+    </div>
+
+</div>
+   
+ <!-- JS -->
+    <script src="{{ url_for('static', filename='script.js') }}"></script>
+
+
+
+</body>
+
+</html>
