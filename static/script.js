@@ -82,10 +82,3 @@ function toggleChat(){
     chatbot.classList.toggle("active");
 
 }
-
-const menuToggle = document.getElementById("menu-toggle");
-const navLinks = document.getElementById("nav-links");
-
-menuToggle.onclick = () => {
-    navLinks.classList.toggle("active");
-};
