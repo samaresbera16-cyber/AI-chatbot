@@ -1,4 +1,7 @@
 Flask
 google-generativeai
+gunicorn
+
+
 
 
