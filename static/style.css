@@ -331,6 +331,17 @@ nav ul li a{
     object-fit:contain;
     margin-bottom:10px;
 }
+
+
+.skill-link{
+    text-decoration: none !important;
+    color: black;
+}
+
+.skill-link p{
+    text-decoration: none !important;
+}
+
 .card,
 .skill-box,
 .project-card{
