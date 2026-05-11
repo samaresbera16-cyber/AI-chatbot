@@ -7,14 +7,6 @@ app = Flask(__name__)
 genai.configure(api_key="AIzaSyDshPjvIbEidGgAUbL-plqyNyjm7PQU5eE")
 model = genai.GenerativeModel("gemini-1.5-flash")
 
-
-
-
-
-
-
-
-
 # Simple chatbot responses
 responses = {
     # Greetings
