@@ -63,9 +63,15 @@
                     View Projects
                 </button>
 
-                <button class="secondary-btn">
-                    Download CV
-                </button>
+
+              <a href="{{ url_for('static', filename='cv.pdf') }}"
+                         download
+                             class="secondary-btn">
+
+                          Download CV
+
+                </a>
+
 
             </div>
 
