@@ -87,6 +87,7 @@ nav ul li a{
     margin-top:30px;
     display:flex;
     gap:20px;
+    flex-wrap:wrap;
 }
 
 .primary-btn,
@@ -96,7 +97,10 @@ nav ul li a{
     cursor:pointer;
     font-size:16px;
     font-weight:600;
+    text-decoration:none;
+    display:inline-block;
 }
+
 
 .primary-btn{
     background:#2563eb;
@@ -145,11 +149,15 @@ nav ul li a{
 
 .skill-box{
     background:white;
-    padding:20px 30px;
+    padding:20px;
     border-radius:15px;
-    box-shadow:0 5px 15px rgba(8, 8, 8, 0.844);
-    font-weight:600;
+    box-shadow:0 5px 15px rgba(0, 0, 0, 0.512);
+    width:130px;
+    height:150px;
+    text-align:center;
 }
+
+
 
 .project-container{
     display:flex;
